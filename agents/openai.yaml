@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cyber Mentor"
+  short_description: "Review papers and research reports in two passes; deliver a copy."
+  default_prompt: "Use $cyber-mentor to revise each paragraph using the Paper Writing Prompt, then review document-wide logic and transitions, and deliver a separate revised manuscript without changing the original."
