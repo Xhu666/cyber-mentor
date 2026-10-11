@@ -18,7 +18,36 @@
 
 ## 安装
 
-下载或克隆本仓库，将仓库内容放入 `~/.codex/skills/cyber-mentor/`。如果使用自定义 Codex 主目录，则放入 `$CODEX_HOME/skills/cyber-mentor/`。保留目录结构，以确保相对链接有效。
+### 方式一：使用 Git 安装
+
+在已安装 Git 的 macOS 或 Linux 终端执行：
+
+```bash
+mkdir -p "$HOME/.agents/skills"
+git clone https://github.com/Xhu666/cyber-mentor.git "$HOME/.agents/skills/cyber-mentor"
+```
+
+这会安装到个人技能目录。如果只希望在某个项目中使用，则在该项目根目录执行以下命令：
+
+```bash
+mkdir -p .agents/skills
+git clone https://github.com/Xhu666/cyber-mentor.git .agents/skills/cyber-mentor
+```
+
+选择一个安装位置即可。目标目录已存在时，不要覆盖。已有 Git 安装可使用 `git -C "$HOME/.agents/skills/cyber-mentor" pull --ff-only` 更新；项目级安装需调整路径。
+
+### 方式二：让 Codex 帮你安装
+
+将下面的提示词直接发送给 Codex：
+
+```text
+请从 https://github.com/Xhu666/cyber-mentor 安装 Cyber Mentor skill，
+放到 ~/.agents/skills/cyber-mentor。保留仓库目录结构，包括内置的 Humanizer
+及其许可证。如果目标目录已存在，先检查，不要覆盖本地修改。
+安装后检查 SKILL.md 和其中的相对引用是否齐全，并告诉我如何调用 $cyber-mentor。
+```
+
+Codex 会自动发现技能变化。如果安装后没有显示，重启 Codex，再按下方示例调用 `$cyber-mentor`。安装目录依据 [Codex 官方技能文档](https://developers.openai.com/codex/skills/)。
 
 ## 使用方法
 

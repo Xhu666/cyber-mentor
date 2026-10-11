@@ -18,7 +18,38 @@ The skill preserves scientific meaning, data, equations, citations, technical bo
 
 ## Installation
 
-Download or clone this repository, then place its contents in `~/.codex/skills/cyber-mentor/` (or `$CODEX_HOME/skills/cyber-mentor/` if you use a custom Codex home). Keep the directory structure intact so that the relative links resolve.
+### Option 1: install with Git
+
+Run these commands in a macOS or Linux terminal with Git installed:
+
+```bash
+mkdir -p "$HOME/.agents/skills"
+git clone https://github.com/Xhu666/cyber-mentor.git "$HOME/.agents/skills/cyber-mentor"
+```
+
+This installs the skill for your user account. To install it only for one project, run the following from that project's root instead:
+
+```bash
+mkdir -p .agents/skills
+git clone https://github.com/Xhu666/cyber-mentor.git .agents/skills/cyber-mentor
+```
+
+Choose one installation location. If the target directory already exists, do not overwrite it. To update an existing Git installation, run `git -C "$HOME/.agents/skills/cyber-mentor" pull --ff-only` (adjust the path for a project installation).
+
+### Option 2: ask Codex to install it
+
+Paste this prompt into Codex:
+
+```text
+Install the Cyber Mentor skill from https://github.com/Xhu666/cyber-mentor
+into ~/.agents/skills/cyber-mentor. Preserve the repository directory structure,
+including the bundled Humanizer and its license. If that directory already
+exists, inspect it first and do not overwrite local changes. Verify that
+SKILL.md and its relative references are present, then explain how to invoke
+$cyber-mentor.
+```
+
+Codex detects skill changes automatically. If the skill does not appear, restart Codex. You can then invoke `$cyber-mentor` as shown below. Installation locations follow the [official Codex skills documentation](https://developers.openai.com/codex/skills/).
 
 ## Usage
 
