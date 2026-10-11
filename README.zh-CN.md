@@ -36,6 +36,28 @@ git clone https://github.com/Xhu666/cyber-mentor.git .agents/skills/cyber-mentor
 
 选择一个安装位置即可。目标目录已存在时，不要覆盖。已有 Git 安装可使用 `git -C "$HOME/.agents/skills/cyber-mentor" pull --ff-only` 更新；项目级安装需调整路径。
 
+**Windows（PowerShell）**
+
+安装 [Git for Windows](https://git-scm.com/downloads/win) 后，打开 PowerShell 执行：
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
+git clone https://github.com/Xhu666/cyber-mentor.git "$env:USERPROFILE\.agents\skills\cyber-mentor"
+```
+
+如果只希望在某个项目中使用，则在项目根目录执行以下命令：
+
+```powershell
+New-Item -ItemType Directory -Force -Path ".agents\skills" | Out-Null
+git clone https://github.com/Xhu666/cyber-mentor.git ".agents\skills\cyber-mentor"
+```
+
+选择一个安装位置即可，不要覆盖已有安装。个人安装的更新命令为：
+
+```powershell
+git -C "$env:USERPROFILE\.agents\skills\cyber-mentor" pull --ff-only
+```
+
 ### 方式二：让 Codex 帮你安装
 
 将下面的提示词直接发送给 Codex：

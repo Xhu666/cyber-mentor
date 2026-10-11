@@ -36,6 +36,28 @@ git clone https://github.com/Xhu666/cyber-mentor.git .agents/skills/cyber-mentor
 
 Choose one installation location. If the target directory already exists, do not overwrite it. To update an existing Git installation, run `git -C "$HOME/.agents/skills/cyber-mentor" pull --ff-only` (adjust the path for a project installation).
 
+**Windows (PowerShell)**
+
+With [Git for Windows](https://git-scm.com/downloads/win) installed, open PowerShell and run:
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.agents\skills" | Out-Null
+git clone https://github.com/Xhu666/cyber-mentor.git "$env:USERPROFILE\.agents\skills\cyber-mentor"
+```
+
+For a project-only installation, run these commands from the project's root instead:
+
+```powershell
+New-Item -ItemType Directory -Force -Path ".agents\skills" | Out-Null
+git clone https://github.com/Xhu666/cyber-mentor.git ".agents\skills\cyber-mentor"
+```
+
+Choose one location and do not overwrite an existing installation. To update a personal installation:
+
+```powershell
+git -C "$env:USERPROFILE\.agents\skills\cyber-mentor" pull --ff-only
+```
+
 ### Option 2: ask Codex to install it
 
 Paste this prompt into Codex:
