@@ -35,7 +35,8 @@ Prioritize clear reasoning, natural transitions, and accurate expression before 
 - Give each sentence one main claim, placing necessary conditions and qualifications close to that claim.
 - Wherever possible, make clear who or what performed an operation and what result it produced.
 - Prefer concrete nouns and precise verbs; reduce stacks of abstract nouns, layers of modifiers, and vague evaluations.
-- Make the referents of this, these, it, which, and similar expressions clear; name the specific object when a reference is ambiguous.
+- Use pronouns sparingly and make the referents of this, these, it, which, and similar expressions clear. When a pronoun refers to an object mentioned more than one sentence earlier, or intervening sentences introduce other possible referents, repeat the specific noun or established term rather than leaving readers to infer the reference.
+- Use first-person expressions such as I, we, my, and our sparingly in academic papers. Prefer the relevant method, experiment, result, or other concrete object as the subject when it expresses the same meaning clearly. Do not introduce awkward passive constructions merely to avoid first person.
 - Let the content determine sentence length. Split complex sentences when they are hard to understand, and clarify the connections between short sentences when needed.
 - Do not treat sophisticated vocabulary, complex syntax, or dense terminology as measures of scholarly quality.
 
